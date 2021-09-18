@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <title>Генератор QR-кодов</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        body {
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>Отсканируйте QR-код для перехода на ресурс</p>
+        <img src=<%=data%> alt="QR-код">
+        <br>
+        <a href="/"><button type="button" class="btn btn-primary">Назад</button></a>
+    </div>
+</body>
+</html>

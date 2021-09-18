@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <title>Генератор QR-кодов</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        body {
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h4>Ввод URL-адреса</h4>
+        <p>Введите URL-адрес, чтобы сгенерировать QR-код</p>
+        <form class="form" action="/scan" method="POST">
+            <input name="url" class="form-control" placeholder="Введите URL-адрес" type="text" required>
+            <br>
+            <button type="submit" class="btn btn-primary" value="Получить QR-код">Сгенерировать</button>
+        </form>
+    </div>
+</body>
+</html>
